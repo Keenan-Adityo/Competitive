@@ -15,19 +15,7 @@ string rtrim(const string &);
  */
 
 int countResponseTimeRegressions(vector<int> responseTimes) {
-    if(responseTimes.size() < 2) {
-        return 0;
-    }
-    
-    long long sum = responseTimes[0];
-    int idx = 1;
-    int count = 0;
-    for(int i = 1; i < responseTimes.size(); i++) {
-        if((sum/idx) < responseTimes[i]) count++;
-        idx++;
-        sum += responseTimes[i];
-    }
-    return count;
+    // swap
 }
 
 int main()
